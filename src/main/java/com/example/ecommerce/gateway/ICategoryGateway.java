@@ -1,10 +1,12 @@
-package com.example.ecommerce.services;
+package com.example.ecommerce.gateway;
 
 import com.example.ecommerce.dto.CategoryDTO;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 
-public interface ICategoryService {
+@Component
+public interface ICategoryGateway {
     List<CategoryDTO> getAllCategories() throws IOException;
 }
